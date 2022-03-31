@@ -4,9 +4,9 @@ import pandas as pd
 import xlsxwriter
 import sys
 
-# 在命令行界面执行python excelColumnSum.py sys.argv[1] sys.argv[2]。
-# 比如sys.argv[1]为"问卷调查.xls"，sys.argv[2]为"1.xlsx"，这两个是运行python脚本的两个参数。
-# 使用sys.argv[1]、sys.argv[2]传参时必须要使用import sys来引用sys库。
+# 比如在命令行界面执行"python excelColumnSum.py 问卷调查.xls 1.xlsx"，
+# 其中sys.argv[1]为"问卷调查.xls"，sys.argv[2]为"1.xlsx"，这两个是运行python脚本的两个参数。
+# 注：使用sys.argv[1]、sys.argv[2]传参时必须要使用import sys来引用sys库。
 filePath = sys.argv[1]
 outputExcelName = sys.argv[2]
 
