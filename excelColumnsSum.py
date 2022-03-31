@@ -17,7 +17,7 @@ data = pd.read_excel(filePath)
 # 初始化result变量的行索引和列索引，用来存储最终要导出的EXCEL表格。
 resultColumn = data.columns
 
-# 以下7行代码：遍历"问卷调查.xls"的所有数值（数值不能重复），存到resultIndex中，作为result变量的行索引。
+# 以下5行代码：遍历"问卷调查.xls"的所有数值（数值不能重复），存到resultIndex中，作为result变量的行索引。
 # 注意：必须要先初始化resultIndex列表为空列表，
 # 然后通过2层for循环遍历"问卷调查.xls"的所有数值，若当前数值data.loc[i][j]不在resultIndex列表中，则利用append将数值添加到resultIndex列表中。
 resultIndex = []  # 初始化空列表
@@ -25,8 +25,6 @@ for i in data.index:
     for j in data.columns:
         if data.loc[i][j] not in resultIndex:
             resultIndex.append(data.loc[i][j])
-        else:
-            pass
 
 
 # 初始化result变量，使用resultIndex为行索引，resultColumn为列索引
