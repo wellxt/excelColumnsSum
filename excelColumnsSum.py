@@ -4,9 +4,11 @@ import pandas as pd
 import xlsxwriter
 import sys
 
-# 比如在命令行界面执行"python excelColumnSum.py 问卷调查.xls 1.xlsx"，
-# 其中sys.argv[1]为"问卷调查.xls"，sys.argv[2]为"1.xlsx"，这两个是运行python脚本的两个参数。
-# 注：使用sys.argv[1]、sys.argv[2]传参时必须要使用import sys来引用sys库。
+'''
+比如在命令行界面执行"python excelColumnSum.py 问卷调查.xls 1.xlsx"，
+其中sys.argv[1]为"问卷调查.xls"，sys.argv[2]为"1.xlsx"，这两个是运行python脚本的两个参数。
+注：使用sys.argv[1]、sys.argv[2]传参时必须要使用import sys来引用sys库。
+'''
 filePath = sys.argv[1]
 outputExcelName = sys.argv[2]
 
@@ -17,9 +19,11 @@ data = pd.read_excel(filePath)
 # 初始化result变量的行索引和列索引，用来存储最终要导出的EXCEL表格。
 resultColumn = data.columns
 
-# 以下5行代码：遍历"问卷调查.xls"的所有数值（数值不能重复），存到resultIndex中，作为result变量的行索引。
-# 注意：必须要先初始化resultIndex列表为空列表，
-# 然后通过2层for循环遍历"问卷调查.xls"的所有数值，若当前数值data.loc[i][j]不在resultIndex列表中，则利用append将数值添加到resultIndex列表中。
+'''
+以下5行代码：遍历"问卷调查.xls"的所有数值（数值不能重复），存到resultIndex中，作为result变量的行索引。
+注意：必须要先初始化resultIndex列表为空列表，
+然后通过2层for循环遍历"问卷调查.xls"的所有数值，若当前数值data.loc[i][j]不在resultIndex列表中，则利用append将数值添加到resultIndex列表中。
+'''
 resultIndex = []  # 初始化空列表
 for i in data.index:
     for j in data.columns:
