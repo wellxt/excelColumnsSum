@@ -1,3 +1,8 @@
+'''
+此程序用于把项目根目录中所有的pdf文件转换成word文件，但pdf中的格式无法转换到word中，只是将pdf中的文本转到word文档中。
+（注：pdf文件不能全是图片，只能转换）。
+'''
+
 import pdfplumber       # pip install pdfplumber
 from docx import Document   # 不是使用pip install docx来安装，而是pip install python-docx安装
 import os
