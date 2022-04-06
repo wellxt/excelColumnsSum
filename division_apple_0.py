@@ -22,3 +22,5 @@ if __name__ == "__main__":
         print("\n出错了 ~_~ ————苹果不能被0个小朋友分！")
     except ValueError as e:                      # 处理ValueError异常
         print("输入错误：", e)                     # 输出错误原因
+    else:                                        # 没有抛出异常时执行
+        print("分苹果顺利完成...")
