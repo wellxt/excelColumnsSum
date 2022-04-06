@@ -20,3 +20,5 @@ if __name__ == "__main__":
         division()                               # 调用分苹果的函数
     except ZeroDivisionError:                    # 处理异常
         print("\n出错了 ~_~ ————苹果不能被0个小朋友分！")
+    except ValueError as e:                      # 处理ValueError异常
+        print("输入错误：", e)                     # 输出错误原因
