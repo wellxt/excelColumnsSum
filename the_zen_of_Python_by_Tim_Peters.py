@@ -54,7 +54,7 @@ class MyFrame(wx.Frame):
         wx.StaticText(panel, label='命名空间是一种绝妙的理念，我们应当多加利用', pos=(50, 330))
 
 if __name__ == '__main__':
-    app =wx.App()           # 初始化应用
+    app = wx.App()           # 初始化应用
     frame = MyFrame(parent=None,id=-1)      # 实例MyFrame类，并传递参数
     frame.Show()                            # 显示窗口
     app.MainLoop()                          # 调用主循环方法
