@@ -49,7 +49,7 @@ class MyFrame(wx.Frame):
         username = self.text_user.GetValue()                # 获取输入的用户名
         password = self.text_password.GetValue()            # 获取输入的密码
         if username == "" or password == "":                # 判断用户名或密码是否为空
-            message = '登录成功'
+            message = '用户名或密码不能为空'
         elif username == 'ping' and password == '123456':     # 用户名和密码正确
             message = '登录成功'
         else:
