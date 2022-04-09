@@ -48,7 +48,7 @@ class MyFrame(wx.Frame):
         wx.StaticText(panel, label='不要包容所有错误，除非你确定需要这样做', pos=(50, 210))
         wx.StaticText(panel, label='当存在多种可能，不要尝试去猜测', pos=(50, 230))
         wx.StaticText(panel, label='而是尽量找一种，最好是唯一种明显的解决方案', pos=(50, 250))
-        wx.StaticText(panel, label='虽然这并不容易，因为这不是 Python 之父', pos=(50, 270))
+        wx.StaticText(panel, label='虽然这并不容易，因为你不是 Python 之父', pos=(50, 270))
         wx.StaticText(panel, label='做也许好过不做，但不假思索就动手还不如不做', pos=(50, 290))
         wx.StaticText(panel, label='如果你无法向人描述你的方案，那肯定不是一个好方案；反之亦然', pos=(50, 310))
         wx.StaticText(panel, label='命名空间是一种绝妙的理念，我们应当多加利用', pos=(50, 330))
